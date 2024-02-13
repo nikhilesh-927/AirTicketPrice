@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Air Ticket Pricing</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="outertop">
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_5quVySiQI7XbY9H8RkMvsHp2sW1w5EYdA&usqp=CAU"
+                width="80px" height="40px">&nbsp;&nbsp;&nbsp;Air Ticket Price</p>
+        <div class="topnav">
+            <a id="inr" class="currency-link" data-cuuency="INR" href="#inr" onclick="changeColor(this)">INR</a>
+            <a id="usd" class="currency-link" data-cuuency="USD" href="#usd" onclick="changeColor(this)">USD</a>
+            <a id="pound" class="currency-link" data-cuuency="GDB" href="#pound" onclick="changeColor(this)">POUND</a>
+            <a id="dinar" class="currency-link" data-cuuency="KWD" href="#dinar" onclick="changeColor(this)">DINAR</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <form id="form1">
+                <label for="choose" size="50">From:</label><br>
+                <select id="location1" name="city1">
+                    <option>Lucknow</option>
+                    <option>Bengaluru</option>
+                    <option>Mumbai</option>
+                </select>
+            </form>
+        </div>
+        <div class="column2">
+            <h3>To</h3>
+        </div>
+        <div class="column3">
+            <form id="form1">
+                <label for="choose" size="50">Destination:</label><br>
+                <select id="location2" name="city2">
+                    <option>Lucknow</option>
+                    <option>Bengaluru</option>
+                    <option>Mumbai</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="distance">
+        <button id="check" onclick="calculateDistance()">Calculate Ticket Price</button>
+
+    </div>
+    <div class="h3">
+        <h3 id="result"></h3>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
